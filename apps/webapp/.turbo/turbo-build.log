@@ -1,0 +1,46 @@
+
+> webapp@0.0.1 build /app/apps/webapp
+> astro check && astro build
+
+▶ Astro collects anonymous usage data.
+  This information helps us improve Astro.
+  Run "astro telemetry disable" to opt-out.
+  https://astro.build/telemetry
+
+06:20:18 [vite] Re-optimizing dependencies because vite config has changed
+06:20:18 Types generated 39ms
+06:20:18 [check] Getting diagnostics for Astro files in /app/apps/webapp...
+[96msrc/pages/index.astro[0m:[93m3[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'Card' is declared but its value is never read.
+
+[7m3[0m import Card from '../components/Card.astro';
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+Result (6 files): 
+- 0 errors
+- 0 warnings
+- 1 hint
+
+06:20:20 [WARN] Unsupported file type /app/apps/webapp/src/pages/Login/LoginForm.tsx found. Prefix filename with an underscore (`_`) to ignore.
+06:20:20 [build] output: "static"
+06:20:20 [build] directory: /app/apps/webapp/dist/
+06:20:20 [build] Collecting build info...
+06:20:20 [build] ✓ Completed in 87ms.
+06:20:20 [build] Building static entrypoints...
+06:20:21 [vite] ✓ built in 443ms
+06:20:21 [build] ✓ Completed in 472ms.
+
+ building client (vite) 
+06:20:21 [vite] transforming...
+06:20:22 [vite] ✓ 23 modules transformed.
+06:20:22 [vite] rendering chunks...
+06:20:22 [vite] computing gzip size...
+06:20:22 [vite] dist/_astro/client.sKOeP2hf.js  313.75 kB │ gzip: 96.95 kB
+06:20:22 [vite] ✓ built in 762ms
+
+ generating static routes 
+06:20:22 ▶ src/pages/index.astro
+06:20:22   └─ /index.html (+11ms)
+06:20:22 ✓ Completed in 26ms.
+
+06:20:22 [build] 1 page(s) built in 1.36s
+06:20:22 [build] Complete!
